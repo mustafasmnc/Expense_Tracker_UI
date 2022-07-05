@@ -32,10 +32,11 @@ class _DailyPageState extends State<DailyPage> {
               color: white,
               boxShadow: [
                 BoxShadow(
-                  color: grey.withOpacity(0.01),
-                  spreadRadius: 10,
+                  color: grey.withOpacity(0.4),
+                  spreadRadius: 1,
+                  offset: Offset(0, 8),
                   blurRadius: 3,
-                )
+                ),
               ],
             ),
             child: Padding(

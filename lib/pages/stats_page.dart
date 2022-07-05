@@ -45,10 +45,11 @@ class _StatsPageState extends State<StatsPage> {
           Container(
             decoration: BoxDecoration(color: white, boxShadow: [
               BoxShadow(
-                color: grey.withOpacity(0.1),
-                spreadRadius: 10,
+                color: grey.withOpacity(0.4),
+                spreadRadius: 1,
+                offset: Offset(0, 8),
                 blurRadius: 3,
-              )
+              ),
             ]),
             child: Padding(
               padding:
@@ -130,10 +131,11 @@ class _StatsPageState extends State<StatsPage> {
                   borderRadius: BorderRadius.circular(10),
                   boxShadow: [
                     BoxShadow(
-                      color: grey.withOpacity(0.1),
-                      spreadRadius: 10,
+                      color: grey.withOpacity(0.4),
+                      spreadRadius: 1,
+                      offset: Offset(8, 8),
                       blurRadius: 3,
-                    )
+                    ),
                   ]),
               child: Padding(
                 padding: const EdgeInsets.all(10),
@@ -187,10 +189,11 @@ class _StatsPageState extends State<StatsPage> {
                     borderRadius: BorderRadius.circular(10),
                     boxShadow: [
                       BoxShadow(
-                        color: grey.withOpacity(0.1),
-                        spreadRadius: 10,
+                        color: grey.withOpacity(0.4),
+                        spreadRadius: 1,
+                        offset: Offset(8, 8),
                         blurRadius: 3,
-                      )
+                      ),
                     ]),
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
