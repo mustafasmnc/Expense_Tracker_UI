@@ -1,4 +1,5 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:expense_tracker1/pages/budget_page.dart';
 import 'package:expense_tracker1/pages/create_budget_page.dart';
 import 'package:expense_tracker1/pages/daily_page.dart';
@@ -15,6 +16,7 @@ class RootApp extends StatefulWidget {
 }
 
 class _RootAppState extends State<RootApp> {
+  final autoSizeGroup = AutoSizeGroup();
   int pageIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -58,19 +60,66 @@ class _RootAppState extends State<RootApp> {
       Ionicons.md_wallet,
       Ionicons.md_person,
     ];
-    return AnimatedBottomNavigationBar(
-      icons: iconItems,
+    List<String> navItemsTexts = [
+      "Daily",
+      "Stats",
+      "Budget",
+      "Profile",
+    ];
+    return AnimatedBottomNavigationBar.builder(
+      itemCount: iconItems.length,
+      tabBuilder: (int index, bool isActive) {
+        final color = isActive ? primary : black.withOpacity(0.5);
+        return Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              iconItems[index],
+              size: 24,
+              color: color,
+            ),
+            SizedBox(height: 4),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: AutoSizeText(
+                navItemsTexts[index],
+                maxLines: 1,
+                style: TextStyle(color: color),
+                group: autoSizeGroup,
+              ),
+            )
+          ],
+        );
+      },
       activeIndex: pageIndex,
       onTap: (index) => setTabs(index),
-      activeColor: primary,
       splashColor: secondary,
-      inactiveColor: black.withOpacity(0.5),
       gapLocation: GapLocation.center,
       notchSmoothness: NotchSmoothness.smoothEdge,
-      leftCornerRadius: 10,
-      rightCornerRadius: 10,
-      iconSize: 25,
+      leftCornerRadius: 20,
+      rightCornerRadius: 20,
+      shadow: BoxShadow(
+        offset: Offset(0, 1),
+        blurRadius: 12,
+        spreadRadius: 0.5,
+        color: Colors.grey,
+      ),
+      //iconSize: 25,
     );
+    // return AnimatedBottomNavigationBar(
+    //   icons: iconItems,
+    //   activeIndex: pageIndex,
+    //   onTap: (index) => setTabs(index),
+    //   activeColor: primary,
+    //   splashColor: secondary,
+    //   inactiveColor: black.withOpacity(0.5),
+    //   gapLocation: GapLocation.center,
+    //   notchSmoothness: NotchSmoothness.smoothEdge,
+    //   leftCornerRadius: 20,
+    //   rightCornerRadius: 20,
+    //   iconSize: 25,
+    // );
   }
 
   setTabs(index) {
