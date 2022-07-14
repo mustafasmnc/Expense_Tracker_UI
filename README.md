@@ -1,16 +1,11 @@
-# expense_tracker1
+# Budget Tracker App
 
 A new Flutter project.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/mustafasmnc/Expense_Tracker_UI/blob/main/assets/sc/daily.png" alt="daily" title="daily" width="200">|
+<img src="https://github.com/mustafasmnc/Expense_Tracker_UI/blob/main/assets/sc/stats.png" alt="stats" title="stats" width="200">|
+<img src="https://github.com/mustafasmnc/Expense_Tracker_UI/blob/main/assets/sc/create.png" alt="create" title="create" width="200">|
+<img src="https://github.com/mustafasmnc/Expense_Tracker_UI/blob/main/assets/sc/budgets.png" alt="budgets" title="budgets" width="200">|
+<img src="https://github.com/mustafasmnc/Expense_Tracker_UI/blob/main/assets/sc/profile.png" alt="profile" title="profile" width="200">
