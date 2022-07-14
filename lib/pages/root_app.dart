@@ -3,6 +3,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:expense_tracker1/pages/budget_page.dart';
 import 'package:expense_tracker1/pages/create_budget_page.dart';
 import 'package:expense_tracker1/pages/daily_page.dart';
+import 'package:expense_tracker1/pages/profile_page.dart';
 import 'package:expense_tracker1/pages/stats_page.dart';
 import 'package:expense_tracker1/theme/colors.dart';
 import 'package:flutter/material.dart';
@@ -45,9 +46,7 @@ class _RootAppState extends State<RootApp> {
         DailyPage(),
         StatsPage(),
         BudgetPage(),
-        Center(
-          child: Text('Profile page'),
-        ),
+        ProfilePage(),
         CreateBudgetPage()
       ],
     );

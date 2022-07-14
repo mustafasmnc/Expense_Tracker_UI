@@ -41,7 +41,7 @@ class _DailyPageState extends State<DailyPage> {
             ),
             child: Padding(
               padding:
-                  EdgeInsets.only(top: 60, bottom: 25, left: 20, right: 20),
+                  EdgeInsets.only(top: 50, bottom: 25, left: 20, right: 20),
               child: Column(
                 children: [
                   Row(

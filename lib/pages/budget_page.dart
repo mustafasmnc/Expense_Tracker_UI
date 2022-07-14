@@ -39,14 +39,14 @@ class _BudgetPageState extends State<BudgetPage> {
             ]),
             child: Padding(
               padding:
-                  EdgeInsets.only(top: 60, left: 20, right: 20, bottom: 25),
+                  EdgeInsets.only(top: 50, left: 20, right: 20, bottom: 25),
               child: Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Stats',
+                        'Budgets',
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,

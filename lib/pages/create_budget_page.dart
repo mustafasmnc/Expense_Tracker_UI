@@ -40,7 +40,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
             ]),
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 60, left: 15, right: 15, bottom: 25),
+                  top: 50, left: 15, right: 15, bottom: 25),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
